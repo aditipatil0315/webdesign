@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Dev</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .topbar {
+      background-color: rgb(11, 48, 135);
+      width: 100%;
+      height: 50px;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu-item {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .hero-section {
+      background-image: url('https://i.pinimg.com/736x/3e/3e/cb/3e3ecb706556de52c23cf0ef897e69de.jpg');
+      height: 92vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .overlay-shade {
+      background-color: rgba(0, 0, 0, 0.75);
+      height: 100%;
+      position: relative;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+      letter-spacing: 5px;
+      font-weight: 100;
+    }
+
+    .hero-text p {
+      padding: 10px 0;
+      letter-spacing: 3px;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: black;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: black;
+      color: #fff;
+      transition: 2s;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="menu-item">Home</div>
+    <div class="menu-item">About Us</div>
+    <div class="menu-item">Contact Us</div>
+    <div class="menu-item">Login</div>
+    <div class="menu-item">Signup</div>
+  </div>
+
+  <div class="hero-section">
+    <div class="overlay-shade">
+      <div class="hero-text">
+        <h1>Welcome to My Website</h1>
+        <p>Lorem ipsum dolor sit, elit. Quo, praesentium?</p>
+        <button>Explore</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
